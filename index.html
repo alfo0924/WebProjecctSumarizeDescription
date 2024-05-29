@@ -1,10 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en,zh-Tw">
 <head>
     <meta charset="UTF-8">
     <title>WebProjecctSumarizeDescription</title>
+
+    <style>
+        body{
+            padding: 150px;
+            background: rgb(3, 3, 3);
+            color: rgb(31, 255, 0);
+            /*font-size: ;*/
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+        }
+        h1:hover{
+            text-transform: uppercase;
+        }
+        .light-mode{
+            background:rgba(175,175,175);
+            color:rgba(17,17,17);
+            font-weight: 800;
+        }
+        button:hover{
+            cursor: grabbing;
+            text-transform: uppercase;
+        }
+    </style>
 </head>
 <body>
 
+
+<h1>tEsT1212</h1>
+<button onclick="lightmode()">initiate lIgHtMode</button>
+<script>
+    function lightmode()
+    {
+        var element=document.body;
+        element.classList.toggle('light-mode');
+    }
+</script>
 </body>
 </html>
